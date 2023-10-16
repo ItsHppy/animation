@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapperSqr {
+    background-color: white;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+.sqr {
+    background-color: darkgreen;
+    border: 2px solid black;
+    width: 196px;
+    height: 196px;
+    animation: anim1 2s ease-in-out infinite alternate;
+}
+
+@keyframes anim1 {
+    0%{
+        transform: translateX(0) translateY(0);
+    }
+    25%{
+        transform: translateX(100%) translateY(0);
+    }
+    50%{
+        transform: translateX(100%) translateY(100%);
+    }
+    75%{
+        transform: translateX(0) translateY(100%);
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+}
